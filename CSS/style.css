@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --dark1: rgb(60, 7, 65);
+    --dark2: rgb(107, 4, 102);
+    --dark3: rgb(167, 38, 179);
+    --dark4: rgb(226, 83, 231);
+}
+body{
+    background-color: var(--dark2);
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+   
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark1);
+    min-height: 50px;
+
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 100px;
+    height: 80px;
+
+}
+
+.nav{
+    
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.nav-link:hover{
+    color: var(--dark3);
+    transition: .4s;
+    text-decoration: underline;
+
+}
+
+.inicio{
+    display: flex;
+    gap: 2rem;
+}
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+
+}
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+   
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-action:hover{
+    background-color: var(--dark4);
+    border: 1px solid var(--dark4)
+}
+
+.link-action{
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+section{
+    padding: 4rem;
+
+}
+
+.first-section{
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 300px;
+
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+
+}
+
+strong{
+    color: var(--dark4);
+
+}
+.first-section {
+    color: var(--white)
+
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+:is(.img-profile,.img-who-am-i){
+box-shadow: 1px 1px 1px 1px var(--dark4);
+}
+
+.second-section{
+    background-color: var(--dark1);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+
+}
+
+.second-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.second-section ul li{
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--white);
+}
+.second-section ul li:hover{
+    transition: .4s;
+    cursor: default;
+    color: var(--dark4)
+}
+
+.título{
+    color: var(--white);
+    
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.third-section > div{
+    display: flex;
+    gap:4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+
+}
+.third-section > div p{
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contatos{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+
+
+input {
+    border: 1px solid rgb(211, 195, 195);
+    width: 40%;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 1.1rem;
+
+}
+
+.campo {
+    margin-bottom: 2em;
+}
+.campo label{
+   
+    color: rgb(17, 16, 17);
+    margin-top: 0;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"] {
+    padding: 0.2em;
+    border: 1px solid rgb(17, 16, 17);
+    box-shadow: 2px 2px 2px rgb(68, 66, 68);
+    display: block;
+}
+.campo textarea {
+
+    padding: 8em;
+    margin-top: -14px;
+    border: 1px solid rgb(17, 16, 17);
+    box-shadow: 2px 2px 2px rgb(68, 67, 68);
+    
+}
+
+.botao{
+    font-size: 1.2em;
+    border: 0;
+    margin-bottom: 1em;
+    color: rgb(24, 19, 29);
+    padding: 0.2em 0.8em;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    position: center;
+    transform: translate(4%, 4%);
+}
+
+.botao:hover{
+    background: rgb(205, 58, 235);
+    box-shadow: inset 2px 2px 2px black;
+    text-shadow: none;
+}
+
+
+
